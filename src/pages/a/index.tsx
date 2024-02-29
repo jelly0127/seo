@@ -2,6 +2,7 @@ import { NextSeo } from 'next-seo';
 
 const Page = () => (
   <>
+    {/* <img src="/images/test.png" alt="test" /> */}
     <NextSeo
       title="Using More of Config"
       description="This example uses more of the available config options."
@@ -12,21 +13,13 @@ const Page = () => (
         description: 'Open Graph Description',
         images: [
           {
-            url: 'https://www.example.ie/og-image-01.jpg',
+            url: '/images/test.png',
             width: 800,
             height: 600,
             alt: 'Og Image Alt',
             type: 'image/jpeg',
           },
-          {
-            url: 'https://www.example.ie/og-image-02.jpg',
-            width: 900,
-            height: 800,
-            alt: 'Og Image Alt Second',
-            type: 'image/jpeg',
-          },
-          { url: 'https://www.example.ie/og-image-03.jpg' },
-          { url: 'https://www.example.ie/og-image-04.jpg' },
+  
         ],
         siteName: 'SiteName',
       }}
