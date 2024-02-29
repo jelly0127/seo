@@ -30,7 +30,7 @@ const Page:FC<PageProps> = ({ seoProps }) => {
           // 其他可能的 NextSeo 配置项
         />
       )}
-      <p>SEO Added to Page</p>
+      <p>SEO Added to Page B</p>
     </>
   );
 };
@@ -41,7 +41,7 @@ export async function getServerSideProps() {
 
   // 返回页面所需数据
   const seoProps = {
-    title: 'Holoworld AI- Chat',
+    title: 'Holoworld AI- Chat B',
     description: 'Your description here',
     canonical: 'Your canonical URL here',
     openGraph: {
