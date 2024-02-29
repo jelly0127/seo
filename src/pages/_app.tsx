@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import Header from "@/utils/seoConfig";
 import { DefaultSeo } from "next-seo";
 import type { AppProps } from "next/app";
 const titleDefault = 'Holoworld AI';
@@ -26,6 +27,7 @@ export const defaultSEOConfig = {
 };
 export default function App({ Component, pageProps }: AppProps) {
   return <>
+     <Header />
       <DefaultSeo {...defaultSEOConfig} />
   <Component {...pageProps} />
   </>;
