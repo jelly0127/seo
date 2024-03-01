@@ -60,14 +60,36 @@ setSeoProps(seoPropsData)
  
 }
   useEffect(() => { 
-    getData()
+    // getData()
+    // 在页面加载时设置OG标签
+    const ogTitle = '动态标题';
+    const ogDescription = '动态描述';
+    const ogImage = '链接到动态图像';
+
+    // 查找已有的OG标签并更新它们，或者创建新的OG标签
+    const updateOGTag = (property: string, content: string) => {
+      let ogTag = document.querySelector(`meta[property="og:${property}"]`);
+      if (ogTag) {
+        // 如果已存在，则更新内容
+        ogTag.setAttribute('content', content);
+      } else {
+        // 如果不存在，则创建新的OG标签
+        ogTag = document.createElement('meta');
+        ogTag.setAttribute('property', `og:${property}`);
+        ogTag.setAttribute('content', content);
+        document.head.appendChild(ogTag);
+      }
+    };
+
+    // 更新或创建OG标签
+    updateOGTag('title', ogTitle);
+    updateOGTag('description', ogDescription);
+    updateOGTag('image', ogImage);
+
   },[])
   return (
     <>
-        <Head>
-        <meta property="og:title" content={seoProps.title} />
-        <meta property="og:description" content={seoProps.description} />
-      </Head>
+      
         {/* <NextSeo
           title={seoProps.title}
           description={seoProps.description}
@@ -76,7 +98,7 @@ setSeoProps(seoPropsData)
           // 其他可能的 NextSeo 配置项
         /> */}
     
-      <p>SEO Added to Page B</p>
+      <p>SEO Added to Page A</p>
     </>
   );
 };
