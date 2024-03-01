@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import Head from 'next/head';
 import { FC, useEffect, useState } from 'react';
 interface SeoProps {
   title: string;
@@ -63,15 +64,18 @@ setSeoProps(seoPropsData)
   },[])
   return (
     <>
-      {seoProps && (
-        <NextSeo
+        <Head>
+        <meta property="og:title" content={seoProps.title} />
+        <meta property="og:description" content={seoProps.description} />
+      </Head>
+        {/* <NextSeo
           title={seoProps.title}
           description={seoProps.description}
           canonical={seoProps.canonical}
           openGraph={seoProps.openGraph}
           // 其他可能的 NextSeo 配置项
-        />
-      )}
+        /> */}
+    
       <p>SEO Added to Page B</p>
     </>
   );
