@@ -46,11 +46,11 @@ export async function getServerSideProps() {
     canonical: 'Your canonical URL here',
     openGraph: {
       url: 'Your Open Graph URL here',
-      title: 'Your Open Graph Title',
+      title: 'B',
       description: 'Your Open Graph Description',
       images: [
         {
-          url: '/images/test.png',
+          url: '/images/def.png',
           alt: 'Your image alt text here',
         },
       ],

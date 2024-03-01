@@ -41,16 +41,16 @@ export async function getServerSideProps() {
 
   // 返回页面所需数据
   const seoProps = {
-    title: 'Holoworld AI- Chat B',
+    title: 'Holoworld AI- Chat A',
     description: 'Your description here',
     canonical: 'Your canonical URL here',
     openGraph: {
       url: 'Your Open Graph URL here',
-      title: 'Your Open Graph Title',
+      title: 'A',
       description: 'Your Open Graph Description',
       images: [
         {
-          url: '/images/test.png',
+          url: '/images/def.png',
           alt: 'Your image alt text here',
         },
       ],
