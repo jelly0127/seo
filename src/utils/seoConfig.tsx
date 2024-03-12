@@ -4,7 +4,7 @@ const titleDefault = 'Holoworld AI';
 const urlDefault = 'https://holoworld.app';
 const descriptionDefault =
   'Chat, play, and create with your favorite characters!';
-const imageDefault = '/images/test.png';
+const imageDefault = 'http://graphics8.nytimes.com/images/2011/12/08/technology/bits-newtwitter/bits-newtwitter-tmagArticle.jpg';
 const author = 'Hologram Labs';
 
 export const defaultSEOConfig = {
