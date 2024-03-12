@@ -29,46 +29,13 @@ const Header = () => {
   return (
     <>
       <Head>
-        {/* Recommended Meta Tags */}
-        <meta charSet="utf-8" />
-        <meta name="language" content="english" />
-        <meta httpEquiv="content-type" content="text/html" />
-        <meta name="author" content={author} />
-        <meta name="designer" content={author} />
-        <meta name="publisher" content={author} />
-
-        {/* Search Engine Optimization Meta Tags */}
-        <meta
-          name="keywords"
-          content="NFT,VTubing,3D,Content Creation,Virtual Avatar,Metaverse"
-        />
-        <meta name="robots" content="index,follow" />
-        <meta name="distribution" content="web" />
-        {/* 
-      Facebook Open Graph meta tags
-        documentation: https://developers.facebook.com/docs/sharing/opengraph */}
-
-        <link rel="manifest" href="/manifest.json" />
-
-        {/* Meta Tags for HTML pages on Mobile */}
-        <meta name="format-detection" content="telephone=yes" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-        />
-
-        <meta name="theme-color" content="#000" />
-        <link rel="shortcut icon" href="/icons/favicon.ico" />
-
-        {/* 
-      Twitter Summary card
-        documentation: https://dev.twitter.com/cards/getting-started
-        Be sure validate your Twitter card markup on the documentation site. */}
-      
-          <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content={urlDefault} />
-      <meta name="twitter:image" content={imageDefault} />
+    <meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@nytimesbits" />
+<meta name="twitter:creator" content="@nickbilton" />
+<meta property="og:url" content="http://bits.blogs.nytimes.com/2011/12/08/a-twitter-for-my-sister/" />
+<meta property="og:title" content="我姐姐的推特" />
+<meta property="og:description" content="早期，Twitter 发展得如此之快，以至于几乎不可能添加新功能，因为工程师们花了大量时间试图防止火箭飞船失速。" />
+<meta property="og:image" content="http://graphics8.nytimes.com/images/2011/12/08/technology/bits-newtwitter/bits-newtwitter-tmagArticle.jpg" />
       </Head>
     </>
   );
