@@ -65,7 +65,10 @@ const Header = () => {
       Twitter Summary card
         documentation: https://dev.twitter.com/cards/getting-started
         Be sure validate your Twitter card markup on the documentation site. */}
-        <meta name="twitter:card" content="summary" />
+      
+          <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:url" content={urlDefault} />
+      <meta name="twitter:image" content={imageDefault} />
       </Head>
     </>
   );
